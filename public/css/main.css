@@ -1,0 +1,153 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #fffa65;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* navbar */
+.navbar {
+    background: #fff;
+    margin-bottom: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: .3rem;
+}
+
+.navbar ._title {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+/* Footer */
+footer {
+    background: #fff;
+    border-radius: .38rem;
+    padding: 1rem;
+    color: #333;
+    text-align: center;
+    margin: 80px auto 20px;
+}
+
+.recipes {
+    background: #fff;
+    padding: 1rem 1rem 1rem 4rem;
+}
+
+.recipes h2 {
+    text-align: center;
+    padding: .5rem;
+    color: #333;
+    /* background: #ccc; */
+    margin-bottom: 2rem;
+}
+
+.recipes ._detail {
+    cursor: pointer;
+}
+
+.recipes h3.title {
+    font-size: 1.1rem;
+}
+
+.recipes p.snippet {
+    background: #ddd;
+    padding: .5rem 1rem 1rem 1rem;
+    border-radius: .5rem;
+}
+
+/* Login */
+.user_login_heading {
+    text-align: center;
+}
+
+.login {
+    background: #ff5252;
+    padding: 1rem;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: .4rem;
+}
+
+.login>div {
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.login .user_name {
+    height: 40%;
+}
+
+.login .user_name input,
+.login .user_password input {
+    width: 100%;
+    height: 40%;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    border-radius: .4rem;
+    border: none;
+    outline: none;
+}
+
+.login .user_name label,
+.login .user_password label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.login .user_password {
+    height: 40%;
+}
+
+.login button {
+    background: #0be881;
+    align-self: center;
+    width: 40%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* Details */
+._details {
+    text-align: center;
+    padding: 1rem;
+}
+
+._details p {
+    background: #eee;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+._details img {
+    width: 15rem;
+    height: 10rem;
+}

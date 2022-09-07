@@ -1,0 +1,22 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+
+    <h1 class="user_login_heading">User Login</h1>
+    <form class="login" action="/login/submit" method="POST">
+        <div class="user_name">
+            <label>User ID</label><br>
+            <input type="text" placeholder="username" name="user" required>
+        </div>
+        <div class="user_password">
+            <label>Password</label><br>
+            <input type="password" placeholder="password" name="password" required>
+        </div>
+        <button type="submit" class="login_btn">Login</button>
+    </form>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+
+</html>

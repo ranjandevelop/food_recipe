@@ -1,0 +1,35 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="_details">
+        <!-- <h2>Recipe Description</h2> -->
+
+        <% if (details.length > 0) { %>
+        <% details.forEach(detail => { %>
+        <h1><%= detail.name %></h1>
+        <img src="/<%= detail.image_url %>" alt="<%= detail.name %>">
+        <h4>Author : <%= detail.author %></h4>
+        <p>
+            <strong>STEPS</strong><br>
+            <p><%= detail.steps %></p>
+
+
+            <p><strong>Ingredients</strong><br>
+                <%= detail.items %> <span><%= detail.amount %></span><span><%= detail.unit %></span>
+            </p>
+
+        </p>
+        <% }) %>
+        <% } else { %>
+        <p>There are no blogs to display...</p>
+        <% } %>
+
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+
+</html>
